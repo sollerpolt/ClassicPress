@@ -485,7 +485,8 @@ window.autosave = function() {
 
 				content = document.getElementById( 'content' ).value || '';
 				post_title = document.getElementById( 'title' ).value || '';
-				excerpt = document.getElementById( 'excerpt' ).value || '';
+				excerpt = document.getElementById("excerpt") ? document.getElementById("excerpt").value || "" : "";
+
 
 				if ( compare( content, postData.content ) && compare( post_title, postData.post_title ) &&
 					compare( excerpt, postData.excerpt ) ) {
